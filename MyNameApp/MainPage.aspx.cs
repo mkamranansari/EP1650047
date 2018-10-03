@@ -16,10 +16,10 @@ namespace MyNameApp
 
 		protected void Add_Click(object sender, EventArgs e)
 		{
-			Int32 result = 0;
+			Int32 result = 0, val2;
 			if(Int32.TryParse(Value1.Text, out result))
 			{
-				if(Int32.TryParse(Value2.Text, out Int32 val2))
+				if(Int32.TryParse(Value2.Text, out val2))
 				{
 					result += val2;
 				}
@@ -29,10 +29,10 @@ namespace MyNameApp
 
 		protected void Multiply_Click(object sender, EventArgs e)
 		{
-			Int32 result;
+			Int32 result = 0, val2;
 			if (Int32.TryParse(Value1.Text, out result))
 			{
-				if (Int32.TryParse(Value2.Text, out Int32 val2))
+				if (Int32.TryParse(Value2.Text, out val2))
 				{
 					result *= val2;
 				}
@@ -42,10 +42,10 @@ namespace MyNameApp
 
 		protected void Subtract_Click(object sender, EventArgs e)
 		{
-			Int32 result;
+			Int32 result = 0, val2;
 			if (Int32.TryParse(Value1.Text, out result))
 			{
-				if (Int32.TryParse(Value2.Text, out Int32 val2))
+				if (Int32.TryParse(Value2.Text, out val2))
 				{
 					result -= val2;
 				}
@@ -55,10 +55,10 @@ namespace MyNameApp
 
 		protected void Divide_Click(object sender, EventArgs e)
 		{
-			Int32 result;
+			Int32 result = 0, val2;
 			if (Int32.TryParse(Value1.Text, out result))
 			{
-				if (Int32.TryParse(Value2.Text, out Int32 val2))
+				if (Int32.TryParse(Value2.Text, out val2))
 				{
 					result /= val2;
 				}
