@@ -42,8 +42,8 @@ namespace MyNameApp
 			Int32 result = 0, val2;
 			if (Int32.TryParse(Value1.Text, out result))
 				if (Int32.TryParse(Value2.Text, out val2))
-					result = calcService.Divide(result, val2);
-			Result.Text = result.ToString();
+					if (val2 == 0) Result.Text = "Can't Divide with Zero !";
+					else Result.Text = calcService.Divide(result, val2).ToString();
 		}
 	}
 }
